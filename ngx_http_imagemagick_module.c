@@ -5,7 +5,7 @@
 #include <ngx_config.h>
 #include <ngx_core.h>
 #include <ngx_http.h>
-#include <wand/magick-wand.h>
+#include <wand/MagickWand.h>
 
 
 static char*	   ngx_http_imagemagick					 (ngx_conf_t *cf, ngx_command_t *cmd, void *conf);
