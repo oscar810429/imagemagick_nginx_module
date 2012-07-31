@@ -2,7 +2,7 @@ ngx_feature="MagickWand"
 ngx_feature_name=MagickWand
 ngx_feature_run=no
 ngx_feature_incs="#include <wand/magick-wand.h>"
-ngx_feature_path="/usr/include/ImageMagick" 
+ngx_feature_path="/usr/local/ImageMagick/include/ImageMagick" 
 ngx_feature_libs=-lMagickWand
 ngx_feature_test="MagickWandGenesis()"
 . auto/feature
