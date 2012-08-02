@@ -152,7 +152,7 @@ ngx_http_imagemagick_command_handler(ngx_http_request_t *r)
 		ngx_http_imagemagick_server_error(r);
 		return;
 	}
-	ai->data = (u_char *) "gm convert";
+	ai->data = (u_char *) "convert";
 	ai->len = 7;
 	
 	// get command from HTTP headers or queryString
@@ -277,7 +277,7 @@ ngx_http_imagemagick_command_handler(ngx_http_request_t *r)
 	ai = tokens->elts;
 	for (i = 0; i < argc; i++) {
 		argv[i] = (char *) ai[i].data;
-		ngx_log_error(NGX_LOG_ERR, log, 0, "current[%d]: %s", i, argv[i]);
+		//ngx_log_error(NGX_LOG_ERR, log, 0, "current[%d]: %s", i, argv[i]);
 	}
 	
 	ngx_array_destroy(tokens);
